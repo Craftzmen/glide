@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background: #001B29;
-    color: white;
-}
 ::-webkit-scrollbar {
     display: none;
 }

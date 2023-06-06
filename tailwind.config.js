@@ -1,7 +1,3 @@
-
-
-
-
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -9,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       font: {
-        'xm': '0.575rem'
+        'xs': '0.575rem'
       }
     },
   },
