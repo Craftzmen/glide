@@ -5,3 +5,8 @@
 ::-webkit-scrollbar {
     display: none;
 }
+@layer base {
+    .underline-2 {
+        text-decoration-thickness: 2px;
+    }
+}
