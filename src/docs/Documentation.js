@@ -2,8 +2,8 @@ import React from 'react'
 
 const Documentation = () => {
   return (
-    <div>
-      <h1>Documentaion page</h1>
+    <div className='text-center mt-10 font-semibold text-xl' >
+      <h1>Documentation page</h1>
     </div>
   )
 }
