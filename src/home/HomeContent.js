@@ -1,13 +1,11 @@
 import React from 'react'
-
-// Chakra Imports
-import { Box, Text } from '@chakra-ui/react'
+import Header from './content/Header'
 
 const HomeContent = () => {
   return (
-    <Box>
-      <Text align={"center"} className='mt-40 text-xl font-bold md:text-3xl lg:text-5xl' >This is the home page</Text>
-    </Box>
+   <div>
+    <Header/>
+   </div>
   )
 }
 

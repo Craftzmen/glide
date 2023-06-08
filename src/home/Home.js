@@ -1,18 +1,20 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+
+// Local Imports
 import Features from '../pages/Features'
 import Blogs from '../pages/Blogs'
 import Documentation from '../docs/Documentation'
 import Navbar from '../partials/Navbar'
+import ErrorPage from '../pages/error/Error'
 
 // Chakra Imports
 import { Box } from '@chakra-ui/react'
-import ErrorPage from '../error/Error'
 import HomeContent from './HomeContent'
 
 const Home = () => {
   return (
-    <section className='w-full h-screen overflow-x-hidden overflow-y-scroll m-0 p-0 box-border' >
+    <section className='w-full h-screen overflow-x-hidden overflow-y-scroll m-0 p-0 box-border dark:bg-gray-900' >
       <Box>
         <Navbar/>
       </Box>
