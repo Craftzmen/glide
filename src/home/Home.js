@@ -5,12 +5,12 @@ import { Routes, Route } from 'react-router-dom'
 import Features from '../pages/Features'
 import Blogs from '../pages/Blogs'
 import Documentation from '../docs/Documentation'
-import Navbar from '../partials/Navbar'
 import ErrorPage from '../pages/error/Error'
 
 // Chakra Imports
 import { Box } from '@chakra-ui/react'
 import HomeContent from './HomeContent'
+import Navbar from '../partials/Navbar/Navbar'
 
 const Home = () => {
   return (
