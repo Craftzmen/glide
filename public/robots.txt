@@ -1,0 +1,35 @@
+# https://www.robotstxt.org/robotstxt.html
+
+# Allow all crawlers access to all parts of the website
+User-agent: *
+Disallow:
+
+# Disallow specific directories
+Disallow: /private/
+Disallow: /admin/
+
+# Disallow specific files
+Disallow: /secrets.html
+Disallow: /backup.zip
+
+# Specify specific directives for Googlebot
+User-agent: Googlebot
+Allow: /$
+Allow: /blog/
+Allow: /feature/
+Allow: /docs/
+Allow: /404/
+Allow: /css/
+Allow: /js/
+Disallow: /internal/
+
+# Specify specific directives for Bingbot
+User-agent: Bingbot
+Allow: /$
+Allow: /blog/
+Allow: /feature/
+Allow: /docs/
+Allow: /404/
+Allow: /css/
+Allow: /js/
+Disallow: /confidential/
