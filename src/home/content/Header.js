@@ -22,8 +22,8 @@ const Header = () => {
       <Text className='leading-7 mt-5 lg:mt-10 mx-7 sm:mx-10 md:mx-16 lg:mx-20 xl:mx-44 lg:leading-9 text-gray-500 text-sm lg:text-lg text-center pb-5 md:pb-10 border-b border-dashed dark:border-gray-700' >Glide is your all-in-one platform for seamless access to a vast array of technologies. With Glide, you can explore and discover comprehensive<Link to='docs' className='text-lime-500 underline underline-offset-4 font-semibold' > docs </Link>for any tech you are passionate about, currently working on, or eager to learn.</Text>
     </Box>
       <Flex justify={"center"} align={"center"} gap={"4"} className='text-sm md:text-base sm:border-l sm:border-r border-dashed dark:border-gray-700 px-10 pt-10 pb-5 mx-10 ml-auto mr-auto flex justify-center items-center max-w-md' >
-          <Link to='404' class='border border-gray-300/50 bg-gray-100 px-10 py-2 rounded-lg font-semibold dark:bg-gray-700 dark:text-gray-300 dark:border-gray-700' >Explore</Link>
-          <Link to='docs' className='px-16 py-2 rounded-lg bg-lime-400 text-lime-800 font-semibold border border-lime-400 hover:opacity-50' >Docs</Link>
+          <Link to='404' class='border border-gray-300/50 bg-gray-100 px-10 py-2 hover:border-gray-100 rounded-lg font-semibold dark:bg-gray-700/50 dark:text-gray-300 dark:border-gray-700 dark:hover:border-gray-700/50' >Explore</Link>
+          <Link to='docs' className='px-16 py-2 rounded-lg bg-lime-400 text-lime-800 font-semibold border border-lime-400 hover:opacity-70' >Docs</Link>
       </Flex>
   </Box>
   )
