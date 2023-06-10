@@ -6,29 +6,24 @@ import { useColorMode } from '@chakra-ui/react';
 import { Flex, Text, Menu, MenuButton, MenuList, HStack } from '@chakra-ui/react';
 
 // Local Imports
-import { DropIcon, ToneNetworkIcon, ToneTemplateIcon, ToneUpdateIcon, ToneBotIcon } from '../../svgs/svgs';
+import { DropIcon, ToneNetworkIcon, ToneTemplateIcon, ToneUpdateIcon, ToneDocsIcon } from '../../svgs/svgs';
 
 const FeaturesMenu = () => {
   const dropdownData = [
     {
       icon: ToneNetworkIcon,
       title: "One Network",
-      description: "Place where all tech lands together and merge."
+      description: "Dozens of tech , one single network"
     },
     {
       icon: ToneTemplateIcon,
       title: "Templates",
-      description: "Free plus Premium templates for all the tech we got."
+      description: "Free + Premium templates available"
     },
     {
       icon: ToneUpdateIcon,
       title: "Daily Updates",
-      description: "Stay updated with the latest version and docs of any tech."
-    },
-    {
-      icon: ToneBotIcon,
-      title: "Chat Bot",
-      description: "Bot that helps you with your learning and work"
+      description: "Stay updated with the latest docs."
     }
   ];
   const { colorMode } = useColorMode();
@@ -52,19 +47,28 @@ const FeaturesMenu = () => {
           <DropIcon />
         </HStack>
       </MenuButton>
-      <MenuList rounded={"xl"} shadow={"xl"} borderColor={"gray.100"} py={"3"} px={"4"} className={`dark:text-gray-300 dark:bg-gray-800 dark:border-gray-800 ${colorMode === 'dark' ? 'dark' : ''}`}>
+      <MenuList pb={"none"} rounded={"xl"} shadow={"xl"} borderColor={"gray.100"} className={`dark:text-gray-300 dark:bg-gray-800 dark:border-gray-800 ${colorMode === 'dark' ? 'dark' : ''}`}>
         <Flex direction={"column"}>
           { dropdownData.map((item, index) => (
-            <NavLink key={index} to={'path-to-be-added'} className='p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700' onClick={handleNavLinkClick}>
-              <Flex gap={"4"}>
-                <item.icon />
-                <Flex direction={"column"} fontSize={"xs"}>
-                  <Text fontWeight={"bold"}>{item.title}</Text>
-                  <Text className='max-w-[13rem]'>{item.description}</Text>
+              <NavLink key={index} to={'path-to-be-added'} className='px-5 py-3 mx-2 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700' onClick={handleNavLinkClick}>
+                <Flex gap={"4"} align={"center"}>
+                  <item.icon/>
+                  <Flex direction={"column"} fontSize={"xs"}>
+                    <Text fontWeight={"bold"}> { item.title }</Text>
+                    <Text className='max-w-[13rem]'> { item.description } </Text>
+                  </Flex>
+                </Flex>
+              </NavLink>
+          ))}
+          <NavLink to='docs' onClick={handleNavLinkClick} className='rounded-b-lg bg-gray-200/30 dark:bg-gray-700/50 mt-2 hover:opacity-70' >
+            <Flex gap={"4"} p={"5"} align={"center"} >
+              <ToneDocsIcon/>
+                <Flex direction={"column"} fontSize={"xs"} >
+                  <Text fontWeight={"bold"}>Documentations</Text>
+                  <Text className='max-w-[13rem]'>Explore docs of any tech you love.</Text>
                 </Flex>
               </Flex>
-            </NavLink>
-          ))}
+          </NavLink>
         </Flex>
       </MenuList>
     </Menu>

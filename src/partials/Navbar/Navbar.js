@@ -5,7 +5,7 @@ import { Link as NavLink } from 'react-router-dom'
 import { Text, Flex, Box, IconButton, Collapse, HStack } from '@chakra-ui/react'
 
 // Local Imports
-import { Logo, MenuIcon, CrossIcon, GithubIcon, ToneNetworkIcon, ToneTemplateIcon, ToneUpdateIcon, ToneBotIcon} from '../../svgs/svgs'
+import { Logo, MenuIcon, CrossIcon, GithubIcon, ToneNetworkIcon, ToneTemplateIcon, ToneUpdateIcon} from '../../svgs/svgs'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 
 import FeaturesMenu from './FeaturesMenu'
@@ -23,12 +23,7 @@ const Navbar = () => {
    {
     icon : ToneUpdateIcon,
     title: "Daily Updates"
-   },
-   {
-    icon : ToneBotIcon,
-    title: "Chat Bot"
-   },
-    
+   }
   ]
   // State Handling for Navigation Bar
   const [isOpen, setIsOpen] = useState(false)
@@ -89,7 +84,7 @@ const Navbar = () => {
           <Flex className='text-sm backdrop-blur-sm bg-white dark:bg-gray-900' direction="column" h={"100vh"} p={"5"} mt="2" position="absolute" top={"10"} w={"full"} left={"0"} zIndex="10" >
             <NavLink to="404" onClick={mediaHideNavbar} className="px-7 py-3 rounded-lg text-center font-bold bg-lime-400 text-lime-800 hover:opacity-50 focus:bg-gray-100 focus:text-gray-500 text-sm mb-3">Join</NavLink>
             <NavLink onClick={mediaHideNavbar} to="feature" className="focus:bg-gray-50 dark:text-white focus:text-gray-500 py-3 dark:hover:bg-gray-800">Features</NavLink>
-              <Flex fontSize={"xs"} pb={"4"} direction={"column"} gap={"4"} className='border-b border-gray-200 dark:border-gray-700 dark:text-gray-300' >
+              <Flex fontSize={"sm"} pb={"4"} direction={"column"} gap={"3.5"} className='border-b border-gray-200 dark:border-gray-700 dark:text-gray-300' >
                 { featureLinks.map((item, index) => (
                   <NavLink key={index} to={'path-to-be-added'} onClick={mediaHideNavbar} >
                     <HStack spacing={"4"}>
@@ -117,7 +112,7 @@ const Navbar = () => {
               <IconButton color={"gray.500"} variant={"unstyled"} aria-label="Toggle dark mode" icon={isDarkMode ? <MoonIcon /> : <SunIcon />} onClick={toggleDarkMode} />
               <IconButton className='dark:text-gray-300 transition-all' variant={"unstyled"} icon={isOpen ? <CrossIcon /> : <MenuIcon />} onClick={toggleNavbar} display={{ base: 'block', md: 'none' }} />
             </Flex>
-            <NavLink to="404" className="hidden md:flex px-7 py-2 rounded-full font-bold bg-lime-400 text-lime-800 hover:opacity-50 focus:bg-gray-100 focus:text-gray-500 text-sm">Join</NavLink>
+            <NavLink to="404" className="hidden md:flex px-7 py-2 rounded-full font-bold bg-lime-400 text-lime-800 hover:opacity-70 focus:bg-gray-100 focus:text-gray-500 text-sm">Join</NavLink>
             <a target='_blank' href="https://github.com/craftzmen" className='hover:opacity-50 hidden md:flex' >
               <GithubIcon/>
             </a>
