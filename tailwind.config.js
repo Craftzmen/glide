@@ -5,8 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      font: {
-        'xs': '0.575rem'
+      fontSize: {
+        'prm-size': '13.5px'
       }
     },
   },
