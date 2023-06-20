@@ -13,7 +13,7 @@ import Card from './Card/Card'
 import { Box, Text } from '@chakra-ui/react'
 
 const AboutSection = () => {
-   const aboutCards = [
+   const aboutCardsData = [
     {
         img : ABOUT_IMG_1,
         label : "Vast Content",
@@ -47,7 +47,7 @@ const AboutSection = () => {
                 <Text fontWeight={"medium"} className='text-zinc-500 text-sm sm:text-base tracking-wide' >All in one platform for tech !</Text>
             </Box>
             <div className='mx-auto mt-10 grid md:grid-cols-2 xl:grid-cols-3 w-full gap-4 gap-y-6 md:gap-y-4 xl:mt-10'>
-            { aboutCards.map((card_item, index) => (
+            { aboutCardsData.map((card_item, index) => (
                 <Card
                     key={ index }
                     img={ card_item.img }
