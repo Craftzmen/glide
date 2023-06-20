@@ -16,14 +16,14 @@ const FeaturesMenu = () => {
       description: "Dozens of techs, one single network"
     },
     {
-      icon: ToneTemplateIcon,
-      title: "Templates",
-      description: "Free + Premium templates available"
-    },
-    {
       icon: ToneUpdateIcon,
       title: "Daily Updates",
       description: "Stay updated with the latest tech"
+    },
+    {
+      icon: ToneTemplateIcon,
+      title: "Templates",
+      description: "Free + Premium templates available"
     }
   ];
   const { colorMode } = useColorMode();
