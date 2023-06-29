@@ -4,14 +4,8 @@
 
 
 @layer base {
-    ::-webkit-scrollbar-thumb {
-        @apply bg-zinc-300 dark:bg-zinc-700 rounded-full
-     }
-     ::-webkit-scrollbar-track {
-         @apply bg-transparent
-     }
      ::-webkit-scrollbar {
-         @apply w-1
+         @apply hidden;
      }
     .underline-2 {
         text-decoration-thickness: 2px;

@@ -42,7 +42,7 @@ const AboutSection = () => {
    ]
     return (
         <Box className='w-full min-w-full min-h-screen pb-20 oveflow-x-hidden dark:bg-zinc-900 px-5 md:px-10 lg:px-20 xl:px-28' >
-            <Box className='flex flex-col gap-y-2 sm:items-center gap-x-3 sm:flex-row sm:justify-center mt-10 lg:mt-0' >
+            <Box className='flex flex-col gap-y-2 sm:items-center gap-x-3 sm:flex-row sm:justify-center' >
                 <Text className='text-3xl font-extrabold dark:text-zinc-300' >What is Glide ?</Text>
                 <Text fontWeight={"medium"} className='text-zinc-500 text-sm sm:text-base tracking-wide' >All in one platform for tech !</Text>
             </Box>
