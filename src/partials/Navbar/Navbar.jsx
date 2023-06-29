@@ -16,8 +16,8 @@ const Navbar = () => {
 
   const featureLinks = [
    { icon : ToneNetworkIcon, title: "One Network" },
-   { icon : ToneTemplateIcon, title: "Templates" },
-   { icon : ToneUpdateIcon, title: "Daily Updates" }
+   { icon : ToneUpdateIcon, title: "Daily Updates" },
+   { icon : ToneTemplateIcon, title: "Templates" }
   ]
   const navLinks = [
     {
@@ -67,7 +67,7 @@ const Navbar = () => {
   };
   
   return (
-    <Flex justify="space-between" w="full" zIndex="100" className='bg-white/50 fixed backdrop-blur-md dark:bg-zinc-900/50 px-7 md:px-20 py-1.5 border-b border-zinc-200/50 dark:border-zinc-700/50'>
+    <Flex justify="space-between" w="full" zIndex="100" className='bg-white/50 backdrop-blur-md dark:bg-zinc-900/50 px-7 md:px-20 py-1.5 border-b border-zinc-200/50 dark:border-zinc-700/50'>
       <Flex gap="6" align="center">
         <Box>
           <NavLink onClick={mediaHideNavbar} to="/" className="font-bold dark:text-white text-lg md:text-[1.4rem] flex gap-x-2 items-center">
@@ -91,7 +91,7 @@ const Navbar = () => {
        <Box className='lg:hidden' >
         <Collapse in={isOpen} animateOpacity>
             <Flex className='text-sm backdrop-blur-sm bg-white dark:bg-zinc-900' direction="column" h={"100vh"} p={"5"} mt="2" position="absolute" top={"10"} w={"full"} left={"0"} zIndex="10" >
-              <NavLink to="404" onClick={mediaHideNavbar} className="px-7 py-3 rounded-lg text-center font-bold border border-gray-200 dark:border-zinc-700 dark:text-zinc-300 hover:opacity-50 focus:bg-zinc-100 focus:text-zinc-500 text-sm mb-3">Join</NavLink>
+              <NavLink to="join" onClick={mediaHideNavbar} className="px-7 py-3 rounded-lg text-center font-bold border border-gray-200 dark:border-zinc-700 dark:text-zinc-300 hover:opacity-50 focus:bg-zinc-100 focus:text-zinc-500 text-sm mb-3">Join</NavLink>
               <NavLink onClick={mediaHideNavbar} to="feature" className="focus:bg-zinc-50 dark:text-white focus:text-zinc-500 py-3 dark:hover:bg-zinc-800">Features</NavLink>
                 <Flex fontSize={"sm"} pb={"2"} px={"4"} direction={"column"} gap={"3.5"} className='border-l-2 border-zinc-200 dark:border-zinc-700/50 dark:text-zinc-300' >
                   { featureLinks.map((item, index) => (
@@ -122,7 +122,7 @@ const Navbar = () => {
               <IconButton mx={2} color={"gray.600"} variant={"unstyled"} aria-label="Toggle dark mode" icon={isDarkMode ? <MoonIcon /> : <SunIcon />} onClick={toggleDarkMode} />
               <IconButton className='dark:text-zinc-300 transition-all' variant={"unstyled"} icon={isOpen ? <CrossIcon /> : <MenuIcon />} onClick={toggleNavbar} display={{ base: 'block', lg: 'none' }} />
             </Flex>
-            <NavLink to="404" className="hidden lg:flex px-7 py-2 rounded-full font-bold bg-black text-white dark:bg-zinc-600/50 hover:opacity-70 focus:bg-zinc-100 focus:text-zinc-500 text-sm">Join</NavLink>
+            <NavLink to="join" className={`hidden lg:flex px-7 py-2 rounded-full font-bold bg-black text-white dark:bg-zinc-600/50 hover:opacity-70 text-sm ${location.pathname === '/join' ? 'bg-zinc-200 text-zinc-700 dark:text-zinc-500' : ''}`}>Join</NavLink>
             <a target='_blank' href="https://github.com/craftzmen" rel='noreferrer' className='hover:opacity-50 hidden lg:flex' >
               <GithubIcon/>
             </a>

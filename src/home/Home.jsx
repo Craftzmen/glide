@@ -11,11 +11,12 @@ import Navbar from '../partials/Navbar/Navbar'
 
 // Chakra Imports
 import { Box } from '@chakra-ui/react'
+import Joining from '../joining/Joining'
 
 const Home = () => {
   return (
     <section className='w-full h-screen overflow-x-hidden overflow-y-scroll m-0 p-0 box-border dark:bg-zinc-900' >
-      <Box>
+      <Box className='sticky top-0 z-50' >
         <Navbar/>
       </Box>
       <div>
@@ -24,7 +25,8 @@ const Home = () => {
             <Route path='feature' element={<Features/>} />
             <Route path='blog' element={<Blogs/>} />
             <Route path='docs' element={<Documentation/>} /> 
-            <Route path='404' element={<ErrorPage/>} />
+            <Route path='*' element={<ErrorPage/>} />
+            <Route path='join' element={<Joining/>} />
         </Routes>
       </div>
     </section>
