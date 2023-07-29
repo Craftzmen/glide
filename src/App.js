@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Client } from 'appwrite';
 import { ClerkProvider } from "@clerk/clerk-react";
