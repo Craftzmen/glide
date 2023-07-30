@@ -105,12 +105,12 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
             <Box className="flex items-center text-xs gap-x-3">
               <input
                 type="checkbox"
-                id="checkbox"
+                id="remember_me"
                 className="checkbox bg-gray-200 dark:bg-zinc-800/50 border-0 rounded-md checkbox-sm focus:outline-0"
                 required={true}
               />
               <label
-                htmlFor="checkbox"
+                htmlFor="remember_me"
                 className="text-zinc-500 cursor-pointer"
               >
                 Remember me
@@ -119,12 +119,12 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
             <Box className="flex items-center text-xs gap-x-3 mt-4">
               <input
                 type="checkbox"
-                id="checkbox"
+                id="terms_&_conditions"
                 className="checkbox bg-gray-200 dark:bg-zinc-800/50 border-0 rounded-md checkbox-sm focus:outline-0"
                 required={true}
               />
               <label
-                htmlFor="checkbox"
+                htmlFor="terms_&_conditions"
                 className="text-zinc-500 cursor-pointer"
               >
                 I agree to the{" "}
