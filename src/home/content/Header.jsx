@@ -13,7 +13,7 @@ const Header = () => {
       animate={{ y: "0px" }}
     >
       <Box className="w-full h-screen bg-white dark:bg-zinc-900">
-        <Box className="border-l border-r border-dashed dark:border-zinc-700/50 px-10 md:pt-5 mx-10 mt-16 lg:mt-28 pb-5 ml-auto mr-auto flex justify-center items-center max-w-xs">
+        <Box className="border-l border-r border-dashed dark:border-zinc-700/50 px-10 md:pt-5 mx-10 mt-16 lg:mt-20 pb-5 ml-auto mr-auto flex justify-center items-center max-w-xs">
           <Link
             to="*"
             className="flex justify-center items-center gap-x-2 bg-zinc-50 dark:bg-zinc-800/50 px-3.5 py-1.5 rounded-full mx-auto border border-zinc-100 dark:border-zinc-700/50 hover:opacity-50"
@@ -43,17 +43,17 @@ const Header = () => {
         </Box>
         <Flex
           gap={"4"}
-          className="text-sm md:text-base sm:border-l sm:border-r border-dashed dark:border-zinc-700/50 px-10 pt-10 pb-5 mx-10 ml-auto mr-auto flex justify-center items-center max-w-md"
+          className="font-thin text-sm md:text-base sm:border-l sm:border-r border-dashed dark:border-zinc-700/50 px-10 pt-10 pb-5 mx-10 ml-auto mr-auto flex justify-center items-center max-w-md"
         >
           <Link
             to="join"
-            class="bg-zinc-100 px-10 py-2.5 rounded-lg font-semibold dark:bg-zinc-600/50 dark:text-zinc-300"
+            class="bg-zinc-100 px-10 py-2.5 rounded-lg font-semibold dark:bg-zinc-600/50 dark:text-zinc-300 hover:opacity-70 transition-all duration-200 "
           >
             Join
           </Link>
           <Link
             to="docs"
-            className="px-10 py-2.5 rounded-lg bg-black text-white font-semibold hover:opacity-50 dark:bg-zinc-800"
+            className="px-10 py-2.5 rounded-lg bg-black text-white font-semibold hover:opacity-70 hover:animate-pulse hover:scale-110 transition-all duration-300 dark:bg-zinc-800"
           >
             Explore
           </Link>

@@ -25,7 +25,7 @@ const Modal = () => {
     navigation: [
       { id: 1, dataPath: 'blog', dataLabel: 'Blogs', icon: BlogIcon },
       { id: 2, dataPath: 'feature', dataLabel: 'Features', icon: FeatureIcon },
-      { id: 3, dataPath: 'materials', dataLabel: 'Materials', icon: ResourceIcon },
+      { id: 3, dataPath: 'materials', dataLabel: 'Resources', icon: ResourceIcon },
       { id: 4, dataPath: 'templates', dataLabel: 'Templates', icon: TemplateIcon },
     ],
     classes : 'flex gap-x-4 items-center hover:bg-zinc-100 dark:hover:bg-zinc-700 rounded-md px-4 py-3 focus:outline-0 focus:bg-zinc-100 dark:focus:bg-zinc-700'
@@ -41,11 +41,9 @@ const Modal = () => {
     const learningResults = searchModalData.learning.filter((item) => 
       item.dataLabel.toLowerCase().includes(query)
   );
-
     const navigationResults = searchModalData.navigation.filter((item) => 
       item.dataLabel.toLowerCase().includes(query)
   );
-
     setSearchResults({ learning: learningResults, navigation: navigationResults });
   };
 
@@ -78,7 +76,7 @@ const Modal = () => {
                 value={searchQuery}
                 onChange={handleSearch}
               />
-              <div className='flex flex-col text-sm mt-4 text-zinc-400 max-h-72 overflow-y-scroll'>
+              <div className='flex flex-col text-sm mt-4 text-zinc-500 max-h-72 overflow-y-scroll'>
                 <label className='mt-1.5 mb-1 text-xs'>Learning</label>
                 { searchResults.learning && searchResults.learning.length > 0 ? (
                   searchResults.learning.map((item, index) => (
