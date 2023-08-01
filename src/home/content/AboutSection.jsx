@@ -23,9 +23,9 @@ const AboutSection = () => {
     },
     {
       img: ABOUT_IMG_2,
-      label: "Extensible Materials",
+      label: "Extensible Resources",
       description:
-        "Play around with lots of helping and attractive tech materials.",
+        "Play around with lots of helping and attractive tech resources.",
     },
     {
       img: ABOUT_IMG_3,

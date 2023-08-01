@@ -95,7 +95,7 @@ export const DocsIcon = () => {
         </svg>
     );
 }
-export const BlogIcon = () => {
+export const TemplateIcon = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className='w-5 h-5 text-zinc-400' >
             <path fill="currentColor" d="M4 24h10v2H4zm0-6h10v2H4zm22-4H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h20a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2zM6 6v6h20V6zm20 22h-6a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2zm-6-8v6h6v-6z"/>
@@ -109,7 +109,7 @@ export const FeatureIcon = () => {
         </svg>
     );
 }
-export const ResourceIcon = () => {
+export const BlogIcon = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className='w-5 h-5 text-zinc-400' >
             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M6.45 8.4a2 2 0 0 0-1.95 1.95v27.3a2 2 0 0 0 2 2h35.1a2 2 0 0 0 2-2v-27.3a2 2 0 0 0-2-1.95Zm3.79 8.14l1.71-3l1.71 3m0 2.41l-1.71 3l-1.71-3m0 10.08l1.71-3l1.71 3m0 2.41l-1.71 3l-1.71-3m7.68-17.86h21.11m0 4.17H21.65m3.72 4.16h13.66m-21.11 4.18h21.11m0 4.16H21.65m3.72 4.17h13.66"/>
@@ -130,7 +130,7 @@ export const PlaygroundIcon = () => {
         </svg>
     );
 }
-export const TemplateIcon = () => {
+export const ResourceIcon = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" className='h-5 w-5 text-zinc-400' >
             <g fill="currentColor">

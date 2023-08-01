@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 // ? Local Imports
 import JoiningIllu from "../assets/images/joining_illu.png";
 import ProfileImg from "../assets/images/profile_img.png";
 
-// ? Chakra Importspo
+// ? Chakra Imports
 import { Flex, Box, Text } from "@chakra-ui/react";
 
 const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
@@ -19,7 +19,7 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
     <motion.div
       initial={{ y: "200px", transition: { delay: 0.3 } }}
       animate={{ y: "0px", }}
-      className="w-full md:flex md:justify-center md:items-center p-0 box-border dark:bg-zinc-900"
+      className="w-full md:flex md:justify-center md:items-center p-0 box-border dark:bg-zinc-900 xl:mt-16"
     >
       <Flex
         direction={{ base: "column", xl: "row" }}
@@ -38,7 +38,7 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
             </Text>
             <Text
               fontSize={{ base: "sm", xl: "md" }}
-              className="dark:text-zinc-500"
+              className="text-zinc-500 dark:text-zinc-500"
             >
               Start using glide for asynchronous daily tech learning.
             </Text>
@@ -67,7 +67,7 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
                 type="text"
                 id="name"
                 placeholder="Enter Name"
-                className="w-full bg-zinc-100 rounded-lg py-3.5 px-5 focus:outline-0 dark:bg-zinc-800/50 dark:placeholder-zinc-500"
+                className="w-full bg-zinc-100/50 rounded-lg py-3.5 px-5 focus:outline-0 dark:bg-zinc-800/50 dark:placeholder-zinc-500"
                 required={true}
               />
             </div>
@@ -76,8 +76,8 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
               <input
                 type="text"
                 id="username"
-                placeholder="Enter Username"
-                className="w-full bg-zinc-100 rounded-lg py-3.5 px-5 focus:outline-0 mb-4 lg:mb-0 dark:bg-zinc-800/50 dark:placeholder-zinc-500"
+                placeholder="i.e. bobby"
+                className="w-full bg-zinc-100/50  rounded-lg py-3.5 px-5 focus:outline-0 mb-4 lg:mb-0 dark:bg-zinc-800/50 dark:placeholder-zinc-500"
               />
             </div>
           </Flex>
@@ -86,8 +86,8 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
             <input
               type="text"
               id="email"
-              placeholder="Enter Email"
-              className="w-full bg-zinc-100 rounded-lg py-3.5 px-5 focus:outline-0 mb-4 dark:bg-zinc-800/50 dark:placeholder-zinc-500"
+              placeholder="user@glide.com"
+              className="w-full bg-zinc-100/50  rounded-lg py-3.5 px-5 focus:outline-0 mb-4 dark:bg-zinc-800/50 dark:placeholder-zinc-500"
               required={true}
             />
           </div>
@@ -97,7 +97,7 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
               type="password"
               id="password"
               placeholder="•••••••••••"
-              className="w-full bg-zinc-100 rounded-lg py-3.5 px-5 focus:outline-0 mb-7 dark:bg-zinc-800/50 dark:placeholder-zinc-500"
+              className="w-full bg-zinc-100/50  rounded-lg py-3.5 px-5 focus:outline-0 mb-7 dark:bg-zinc-800/50 dark:placeholder-zinc-500"
               required={true}
             />
           </div>
@@ -106,7 +106,7 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
               <input
                 type="checkbox"
                 id="remember_me"
-                className="checkbox bg-gray-200 dark:bg-zinc-800/50 border-0 rounded-md checkbox-sm focus:outline-0"
+                className="checkbox bg-gray-200 dark:bg-zinc-800/50 border-0 rounded checkbox-sm focus:outline-0"
                 required={true}
               />
               <label
@@ -116,11 +116,11 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
                 Remember me
               </label>
             </Box>
-            <Box className="flex items-center text-xs gap-x-3 mt-4">
+            <Box className="flex items-center text-xs gap-x-3 mt-2.5">
               <input
                 type="checkbox"
                 id="terms_&_conditions"
-                className="checkbox bg-gray-200 dark:bg-zinc-800/50 border-0 rounded-md checkbox-sm focus:outline-0"
+                className="checkbox bg-gray-200 dark:bg-zinc-800/50 border-0 rounded checkbox-sm focus:outline-0"
                 required={true}
               />
               <label
