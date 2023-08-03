@@ -10,4 +10,5 @@
     .underline-2 {
         text-decoration-thickness: 2px;
     }
+    @apply box-border;
 }
