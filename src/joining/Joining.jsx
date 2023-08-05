@@ -72,7 +72,7 @@ const Joining = ({ id = Math.random(), name = "Craftzmen" }) => {
               />
             </div>
             <div className="space-y-1">
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username" className={""} >Username</label>
               <input
                 type="text"
                 id="username"
